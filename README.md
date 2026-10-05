@@ -54,7 +54,223 @@ LUFFY/
 - **FSDP Training**: Model loading and distributed training setup
 - **Data Processing**: Batch dimension operations and tensor reshaping
 
-### 📝 Complete TODO List
+### 📝 Complete TODO List- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add logging for API calls and errors
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Support batch processing for multiple prompts
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add timeout configuration for API calls
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Implement Vertex AI initialization and authentication
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Configure safety settings for content generation
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Set up GenerativeModel with proper system instructions
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Implement retry logic with exponential backoff
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add comprehensive error handling for API access issues
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Handle rate limiting and quota management
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Implement response validation and text extraction
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add support for different generation configurations
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add smaller page sizes when https://github.com/Dao-AILab/flash-attention/pull/824 is merged
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - make a canonical logger that supports various backend
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - this function needs error handling
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): add more models for test
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): we can construct the position_ids_rmpad here
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): we can construct the position_ids_rmpad here
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): add more models for test
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): we can construct the position_ids_rmpad here
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): we can construct the position_ids_rmpad here
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - pass *args and **kwargs is bug prone and not very convincing
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - pass *args and **kwargs is bug prone and not very convincing
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): support FSDP hybrid shard for larger model
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - it seems that manual offload is slowly than FSDP offload
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992): 1. support create from random initialized model. 2. Support init with FSDP directly
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992, shengguangming) fix me. Current, auto_wrap_policy causes HFRollout to hang in Gemma
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add transformer policy
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add more optimizer args into config
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): support FSDP hybrid shard for larger model
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - a sharding manager that do nothing?
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - here, we should return all metrics
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - support DCP and save sharded checkpoints
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add other ways to estimate advantages
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - support each role have individual ray_worker_group_cls,
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - we have to make sure the batch size is divisible by the dp size
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - make a canonical logger that supports various backend
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add response length
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - we have to make sure the batch size is divisible by the dp size
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - make a canonical logger that supports various backend
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check path
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - from remote not implemented yet
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - llama does not have dropout in the config??
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add sequence parallel operator reduce_scatter here
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add sequence parallel operator all_gather here
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add sequence parallel operator reduce_scatter here
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - for better performance, the sp padding should be removed at each layer. Not sure the performance gap
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - for better performance, the sp padding should be removed at each layer. Not sure the performance gap
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): HF may supported more than listed here, we should add more after testing
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - These transpose are quite inefficient but Flash Attention requires the layout [batch_size, sequence_length, num_heads, head_dim]. We would need to refactor the KV cache
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Optimize memory usage during tensor reshaping
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add support for different tensor types and shapes
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Optimize tensor view operations for performance
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add error handling for invalid batch dimensions
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992) add consistency check
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - we can actually lift this restriction if needed
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992) whether to copy
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - create a class with customizable name
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): delete the unused args
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (woosuk): Support fine-grained seeds (e.g., seed per request).
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): maybe we can hack the autoregressive logics without only apply post process for better performance
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): we can optimize it by making the dataloader yield List[int] without padding.
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): can be optimzied by rewrite the Sampler._get_logprobs() logits
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (woosuk): Print more configs in debug mode.
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - currently is hfconfig
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): maybe we can choose init here or from arguments
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check get_lora_tokenizer func
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check this input
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - we may not need to decode
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): latest commit in vllm fix awq for this function and add load_weights
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (pad to be divided by 4)
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhuohan): Change the get_logits part to a separate stage.
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): the lora tokenizer is also passed, but may be different
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check megatron
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - need to implement a general way to deal with prefix
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - do not use cupy
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (woosuk): Profile swapping overhead and optimize if needed.
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): maybe we should also flag the megatron is initialized
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): delete the unused args
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (woosuk): Support fine-grained seeds (e.g., seed per request).
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - spec config
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - for multimodal model
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): maybe we can hack the autoregressive logics without only apply post process for better performance
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): we can optimize it by making the dataloader yield List[int] without padding.
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): can be optimzied by rewrite the Sampler._get_logprobs() logits
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (woosuk): Print more configs in debug mode.
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - currently is hfconfig
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): maybe we can choose init here or from arguments
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check tokenizer class
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - don't know what's the usage
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): add for verl but we may not tokenizer in Rollout
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check whether we should rebuild the CUDAGraph every iter when offload/load KVCache
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check megatron
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - need to implement a general way to deal with prefix
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): latest commit in vllm fix awq for this function and add load_weights
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): This is a hack, we need to register the load_weight() func for each model in vllm
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): This is a hack, we need to register the load_weight() func for each model in vllm
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): perform sampling on rank 0
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - this will hang
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - will hang when used with device mesh
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - init using device mesh
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): verl not support speculative decode now
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): not implemented async executor yet
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): the lora tokenizer is also passed, but may be different
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): check why vllm has similar file in vllm.model_executor.parallel_utils.parallel_state
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): check whether need this
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): check this
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): check this
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): delete the unused args
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (woosuk): Support fine-grained seeds (e.g., seed per request).
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - spec config
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check whether this is necessary
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check usagecontext
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): we can optimize it by making the dataloader yield List[int] without padding.
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): can be optimzied by rewrite the Sampler._get_logprobs() logits
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (woosuk): Print more configs in debug mode.
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): maybe we can choose init here or from arguments
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): add for verl but we may not tokenizer in Rollout
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check whether we should rebuild the CUDAGraph every iter when offload/load KVCache
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check megatron
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - need to implement a general way to deal with prefix
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (shengguangming): latest commit in vllm fix awq for this function and add load_weights
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): This is a hack, we need to register the load_weight() func for each model in vllm
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): This is a hack, we need to register the load_weight() func for each model in vllm
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): deviate from the v0.5.4, not pp now
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check why True is not work in Ray trainer
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check why True is not work in Ray trainer
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - init using device mesh (not support hybrid engine now)
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check why True is not work in Ray trainer
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - init using device mesh (not support hybrid engine now)
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): verl not support speculative decode now
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): not implemented async executor yet
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): the lora tokenizer is also passed, but may be different
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): check why vllm has similar file in vllm.model_executor.parallel_utils.parallel_state
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - we don't need driver
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): set correct model runner class
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): check whether need this
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add checkpoint manager
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992):
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Implement model loading with proper initialization context
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add support for different model types and configurations
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Implement memory-efficient model loading for large models
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add model validation and compatibility checks
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Complete model loading implementation
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add support for custom model architectures
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Implement proper dtype and attention configuration
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Implement gradient checkpointing configuration
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add memory usage optimization strategies
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Configure mixed precision training settings
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Implement FSDP sharding and wrapping policies
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add CPU offloading configuration for memory optimization
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Set up distributed training parameters properly
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Initialize FSDP wrapped model
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add a unified tracking
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992) add back checkpoint manager. Currently, it blocks when uploading to hdfs. So very slow.
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Implement reward computation for different data sources
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add support for parallel processing of reward computation
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Implement proper sequence decoding and validation
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add thread-safe logging and debugging functionality
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Optimize memory usage for large batch processing
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Extract and validate prompt and response sequences
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Decode sequences to text format
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Apply appropriate reward function based on data source
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Handle edge cases and error conditions
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Implement batch-wise reward computation
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Add proper error handling and validation
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add other ways to estimate advantages
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add response length
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - support each role have individual ray_worker_group_cls,
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - we have to make sure the batch size is divisible by the dp size
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check path
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - from remote not implemented yet
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - make a canonical logger that supports various backend
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - shall we remove previous ckpt every save?
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - address optimizer is None
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (haibin.lin):
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (haibin.lin):
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): check how to disable megatron timers
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - we can make this faster
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - to find a better way to load mistral7b-rm lm_head
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add them back
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992): actually, this function should only return log_prob and this logic should be handled by user outside
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - actually, we just need to control the sampling order.
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - we may use the new schedule instead
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - we may use the new schedule instead
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): support FSDP hybrid shard for larger model
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - it seems that manual offload is slowly than FSDP offload
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992): 1. support create from random initialized model. 2. Support init with FSDP directly
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992, shengguangming) fix me. Current, auto_wrap_policy causes HFRollout to hang in Gemma
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add transformer policy
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add more optimizer args into config
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): support FSDP hybrid shard for larger model
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - a sharding manager that do nothing?
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - here, we should return all metrics
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): we may need to extract it to dp_reward_model.py
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): Currently, we only support reference model param offload
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add more optimizer args into config
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - here, we should return all metrics
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): support critic model offload
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - support vpp here
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add more optimizer args into config
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - add more optimizer args into config
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - reward model use itself tokenizer instead of sft tokenizer
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): check why is bfloat16
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - actually, we just need to control the sampling order.
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - we may use the new schedule instead
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - filter out the seq with no answers like ds-chat
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check how to set seed for each model
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - check how to set seed for each model
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - offload FSDP model weights
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Current impl doesn't consider FSDP with torch micro-dp
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - Current impl doesn't consider FSDP with torch micro-dp
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - shall we build a micro_dp group for vllm when integrating with vLLM?
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - after binding to the memory buffer, we can load the checkpoint here
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (sgm): this may not be true for FSDP -> vLLM
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992) We can consider copy non-tp weight to another infer buffer.
+
+
 
 - [ ] **luffy/deepscaler/utils.py:45** - Implement OpenAI API client initialization
 - [ ] **luffy/deepscaler/utils.py:46** - Add proper authentication handling
